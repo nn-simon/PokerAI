@@ -129,7 +129,7 @@ def setup_config(config):
             config['ante'], config['blind_structure']
     )
     for player in config['ai_players']:
-        global_game_manager.join_ai_player(player['name'], player['path'], config['model_path'])
+        global_game_manager.join_ai_player(player['name'], player['path'], player['model_path'])
 
 def start_server(config_path, port, speed):
     global MODE_SPEED
